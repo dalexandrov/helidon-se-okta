@@ -1,0 +1,20 @@
+
+app:
+  greeting: "Hello"
+
+server:
+  port: 8080
+  host: 0.0.0.0
+
+security:
+  providers:
+    - jwt:
+        atn-token:
+          jwk.resource.resource-path: "keys.json"
+          jwt-audience: "api://default"
+  web-server:
+    defaults:
+      authenticate: true
+    paths:
+      - path: "/hello"
+        methods: ["get"]

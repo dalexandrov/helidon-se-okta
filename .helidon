@@ -1,0 +1,6 @@
+#Helidon Project Configuration
+#Mon Dec 06 14:28:53 MSK 2021
+schema.version=1.1.0
+helidon.version=2.4.0
+project.flavor=se
+project.directory=/Users/mitia/helidon-se-okta
